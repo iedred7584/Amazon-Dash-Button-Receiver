@@ -1,2 +1,2 @@
 # Amazon Dash Button Receiver
-作成中
+[Qiita](https://qiita.com/iedred7584/items/3d885814da9fa83b1458)
