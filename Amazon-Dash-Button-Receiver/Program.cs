@@ -11,7 +11,7 @@ namespace Amazon_Dash_Button_Receiver
         private static Ping ping = new Ping();
         static void Main(string[] args)
         {
-            Console.WriteLine($"{DateTime.Now.ToString("HH: mm:ss")}|Amazon Dash Button Reciever Start.");
+            Console.WriteLine($"{DateTime.Now:HH:mm:ss}|Amazon Dash Button Reciever Start.");
             while (true)
             {
                 try
@@ -23,7 +23,7 @@ namespace Amazon_Dash_Button_Receiver
                         if (flag)
                         {
                             flag = false;
-                            Console.WriteLine($"{DateTime.Now.ToString("HH:mm:ss")}|Pushed.");
+                            Console.WriteLine($"{DateTime.Now:HH:mm:ss}|Pushed.");
                         }
                     }
                     else flag = true;
