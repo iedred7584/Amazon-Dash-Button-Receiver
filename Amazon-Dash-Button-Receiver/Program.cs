@@ -23,7 +23,7 @@ namespace Amazon_Dash_Button_Receiver
                         if (flag)
                         {
                             flag = false;
-                            Console.WriteLine($"{DateTime.Now:HH:mm:ss}|Pushed.");
+                            Push();
                         }
                     }
                     else flag = true;
@@ -31,6 +31,12 @@ namespace Amazon_Dash_Button_Receiver
                 }
                 catch (Exception ex) { Console.WriteLine(ex.ToString()); }
             }
+        }
+
+        static void Push()
+        {
+            // ボタンが押されたときに動かしたい処理
+            Console.WriteLine($"{DateTime.Now:HH:mm:ss}|Pushed.");
         }
     }
 }
